@@ -20,6 +20,7 @@ $ git init
 4. 把文件(夹)添加到暂存区(stage / index)
 $ git add file  # 添加文件到暂存区(stage / index)
 $ git add folder/  # 添加文件夹到暂存区(stage / index)
+$ git add .  # 添加所有到暂存区(stage / index)
 
 5. 提交到仓库
 $ git commit -m "message" # 提交到仓库，并附加一些备注说明
