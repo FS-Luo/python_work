@@ -1,0 +1,35 @@
+# Git 使用说明
+
+1. 安装 Git
+
+2. 配置 Git
+    配置 Git 的用户名、用户邮箱：
+$ git config --global user.name "Your Name"
+$ git config --global user.email "email@example.com"
+
+3. 创建版本库
+    版本库又名仓库，英文名repository，可以简单理解成一个目录，这个目录里面
+的所有文件都可以被Git管理起来，每个文件的修改、删除，Git都能跟踪，以便任何
+时刻都可以追踪历史，或者在将来某个时刻可以“还原”。
+    在一个需要 git 的文件夹内打开 git bash , 然后把这个目录变为 Git 可以
+管理的仓库：
+$ git init
+
+# 命令 ls 或 dir 可以查看当前目录下的文件、文件夹，若是隐藏的，需使用 ls -ah 命令。
+
+4. 把文件(夹)添加到暂存区(stage / index)
+$ git add file  # 添加文件到暂存区(stage / index)
+$ git add folder/  # 添加文件夹到暂存区(stage / index)
+
+5. 提交到仓库
+$ git commit -m "message" # 提交到仓库，并附加一些备注说明
+
+6. 创建 Github 仓库
+    创建一个与本地仓库同名的新仓库，复制其url(最好使用HTTP)
+
+7. 推送到 Github 仓库
+$ git remote add origin your_repository_url
+$ git push -u origin master
+
+8. 从 Github 仓库克隆
+$ git clone your_repository_url
